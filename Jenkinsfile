@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'openjdk:16-jdk-slim' // Gunakan gambar Java, misalnya OpenJDK 16
+            image 'maven:3.8.8-openjdk-16'
         }
     }
     stages {
@@ -11,4 +11,4 @@ pipeline {
             }
         }
     }
-} 
+}
