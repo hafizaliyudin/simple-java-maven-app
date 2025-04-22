@@ -5,10 +5,11 @@ pipeline {
         }
     }
     stages {
-        stage('Build') {
+    stages {
+        stage('Build') { 
             steps {
-                sh 'javac HelloWorld.java' // Ganti perintah untuk membangun proyek Java, misalnya dengan menggunakan 'javac'
+                sh 'mvn -B -DskipTests clean package' 
             }
         }
     }
-}
+} 
